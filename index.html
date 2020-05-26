@@ -3,30 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Jessica's Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-      
-      <header>
-          <p>Jessica Herrera</p>
+  <body class="main-body">
+      <div class="pg-wrapper">
+        <header>
+            <div class="flex-container flex-center flex-wrap align-center">
+                <h2>Jessica Herrera</h2>
           <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
+              <ul class="flex-container flex-wrap">
+                  <li class="nav-item"><a href="index.html">Home</a></li>
+                  <li class="nav-item"><a href="nav-item">Portfolio</a></li>
+                  <li class="nav-item"><a href="#item">Contact</a></li>
               </ul>
           </nav>
-          <div class="flex-container">
+            </div>
+          <div class="flex-container flex-wrap">
               <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!
               </p>
               <img class="profile-img" alt="Cartoon profile picture" src="images/responsive-layout-profile.png">
           </div>
       </header>
       
-      <section>
+      <section class="main-section">
       <h2>Portfolio</h2>
-          <div class="flex-container">
+          <div class="flex-container flex-wrap">
               <div class="card">
                   <img class="card-img" src="images/portfolio-1.png" alt="Marketing Page photo">
                   <h3>Marketing Page</h3>
@@ -78,16 +81,20 @@
       </section>
    
 
-    <footer>
+    <footer class="flex-container flex-center flex-between">
         <p>Jessica Herrera</p>
         
-      <nav>
+      <nav class="hide-mobile">
           <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Contact</a></li>
           </ul>
       </nav>
+        <a href="#">Back to Top</a>
     </footer>
+      
+      
+      </div>   
   </body>
   </html>

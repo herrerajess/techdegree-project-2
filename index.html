@@ -3,33 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Jessica's Website</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
   <body class="main-body">
-      <div class="pg-wrapper">
-        <header>
-            <div class="flex-container flex-center flex-wrap align-center">
-                <h2>Jessica Herrera</h2>
-          <nav>
-              <ul class="flex-container flex-wrap">
-                  <li class="nav-item"><a href="index.html">Home</a></li>
-                  <li class="nav-item"><a href="nav-item">Portfolio</a></li>
-                  <li class="nav-item"><a href="#item">Contact</a></li>
-              </ul>
-          </nav>
-            </div>
-          <div class="flex-container flex-wrap">
-              <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!
-              </p>
-              <img class="profile-img" alt="Cartoon profile picture" src="images/responsive-layout-profile.png">
-          </div>
-      </header>
       
-      <section class="main-section">
-      <h2>Portfolio</h2>
-          <div class="flex-container flex-wrap">
+<header>
+    <div class="pg-wrapper">
+        <div>
+            <h2>Jessica Herrera</h2>
+            <nav>
+                <ul class="main-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bio">
+            <img class="profile-img" alt="Cartoon profile picture" src="images/responsive-layout-profile.png">
+            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!
+            </p>
+        </div>
+        
+    </div>
+</header>
+      
+      <div class="main-section">
+          <section id="portfolio" class="pg-wrapper">
+              <h2>Portfolio</h2>
               <div class="card">
                   <img class="card-img" src="images/portfolio-1.png" alt="Marketing Page photo">
                   <h3>Marketing Page</h3>
@@ -71,30 +75,31 @@
                   <p>Someone can enter in the numbers they want, and press the big blue button and get the result.
                   </p>
               </div>
-          </div>
-      </section>
-      <section>
+              </section>
+          
+              </div>
+          
+      <section id="contact" class="contact-container pg-wrapper">
         <h3>Contact</h3>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-          <p>Phone <strong><a href="tel:+11115551234">+1(111)555-1234</a></strong></p>
-          <p>Email <strong>jherrera@web.com</strong></p>
+          <p>Phone <a href="tel:+11115551234" class="contact-link">+1(111)555-1234</a></p>
+          <p>Email <a href="mailto:email@yoursite.com" class="contact-link">email@yoursite.com</a></p>
       </section>
    
-
-    <footer class="flex-container flex-center flex-between">
+      <footer class="footer-container pg-wrapper">
+    <div class="footer-wrapper">
         <p>Jessica Herrera</p>
-        
-      <nav class="hide-mobile">
+        <nav class="footer-nav">
           <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">Contact</a></li>
           </ul>
-      </nav>
-        <a href="#">Back to Top</a>
-    </footer>
+        </nav>
+        <a href="#" class="footer-link">Back to Top</a>
+    </div>
+</footer>
       
-      
-      </div>   
+        
   </body>
   </html>

@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: .7;
+}
+
 body {
     color: #4A5568;
     font-family: 'Raleway', sans-serif;
@@ -45,41 +49,6 @@ h2 {
     margin: 0;
 }
 
-/*
-
-}
-
-
-.main-section {
-    background: white;
-}
-
-.flex-container {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-center {
-    align-items: center;
-}
-
-.flex-between {
-    justify-content: space-between
-}
-
-.align-center {
-    justify-content: center;
-}
-
-.card {
-    width: 33%;
-    margin: 8px;
-}
-
-*/
 
 /* ===== 320px mobile sytles ===== */
 
@@ -132,9 +101,16 @@ h2 {
     margin-bottom: 30px;
 }
 
+.card p {
+    max-width: 300px;
+    margin: auto;
+}
+
+
 .card-img {
     max-width: 287x;
     height: 163px;
+    margin: auto;
 }
 
 
@@ -171,4 +147,108 @@ h2 {
 .footer-link {
     color: inherit;
     text-transform: uppercase;
+}
+
+
+/* ===== 768 tablet sytles ===== */
+
+@media (min-width: 768px) {
+    
+    .pg-wrapper {
+        max-width: 706px;
+    }
+    
+    .main-nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    h2 {
+        padding: 0;
+    }
+    
+    .nav-item a {
+        background: transparent;
+        padding: 10px 20px;
+    }
+    
+    .bio {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .profile-img {
+        margin-left: 10px;
+    }
+    
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 50%;
+    }
+    
+    .contact-container {
+        max-width: 520px;
+    }
+    
+    .footer-nav {
+        display: inline-block;
+    }
+    
+    .footer-list {
+        display: flex;
+    }
+    
+    .footer-list li a {
+        padding: 0 10px;
+    }
+    
+    .top-link {
+        display: none;
+    }
+}
+
+
+/* ===== 1024 tablet sytles ===== */
+
+@media (min-width: 768px) {
+    
+    .pg-wrapper {
+        max-width: 906px;
+    }
+    
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-item {
+        margin-bottom: none;
+    }
+    
+    .bio p {
+        max-width: 500px;
+        text-align: left;
+        justify-content: space-between;
+    }
+    
+    .profile-img {
+        width: 368px;
+        height: 225px;
+        margin: 0 0 0 20px;
+    }
+    
+    .card {
+        width: 30%;
+        margin: 10px;
+    }
+    
+    .contact-container p {
+        width: 500px;
+        margin: auto;
+    }
+
 }

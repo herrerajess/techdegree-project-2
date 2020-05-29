@@ -15,7 +15,7 @@ a:hover {
 
 body {
     color: #4A5568;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -38,19 +38,25 @@ ul li {
     margin: 0;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
 h2 {
     font-size: 32px;
     color: #2D3748;
     padding-bottom: 20px;
 }
 
+
+/* ===== 320px mobile sytles ===== */
+
 .main-body {
     background: #F7FAFC;
     margin: 0;
 }
-
-
-/* ===== 320px mobile sytles ===== */
 
 .pg-wrapper {
     margin: auto;
@@ -59,6 +65,10 @@ h2 {
     text-align: center;
 }
 
+.list-disc li {
+    list-style: disc;
+    text-align: left;
+}
 
 /* header */
 
@@ -106,11 +116,25 @@ h2 {
     margin: auto;
 }
 
+/* Skills */
 
-.card-img {
-    max-width: 287x;
-    height: 163px;
+.skills-container {
+    padding: 40px 0;
+}
+
+.skills-img {
+    width: 3000px;
+    height: 200px;
     margin: auto;
+    background: #FBD38D;
+    padding: 20px;
+}
+
+.list-disc li {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    line-height: 1.8;
 }
 
 
@@ -184,10 +208,32 @@ h2 {
     .card-grid {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .card {
-        width: 50%;
+        width: 45%;
+        margin: 10px;
+    }
+    
+    .skills-container {
+        display: flex;
+    }
+    
+    .skills-details p {
+        width: 300px;
+        text-align: left;
+    }
+    
+    .skills-img {
+        width: 320px;
+        margin-right: 20px;
+    }
+    
+    .list-disc li {
+        list-style: disc;
+        text-align: left;
+        margin-left: 80px;
     }
     
     .contact-container {
@@ -212,9 +258,14 @@ h2 {
 }
 
 
-/* ===== 1024 tablet sytles ===== */
+/* ===== 1024 desktop sytles ===== */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    
+    h2,
+    ul {
+        margin: 0;
+    }
     
     .pg-wrapper {
         max-width: 906px;
@@ -223,11 +274,15 @@ h2 {
     .main-header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
     
-    .nav-item {
-        margin-bottom: none;
+    .main-nav {
+        align-items: center;
+        margin-top: 10px;
     }
+
     
     .bio p {
         max-width: 500px;
@@ -241,9 +296,26 @@ h2 {
         margin: 0 0 0 20px;
     }
     
+    .card-grid {
+        justify-content: space-between;
+    }
+    
     .card {
         width: 30%;
         margin: 10px;
+    }
+    
+    .skills-container {
+        justify-content: space-around;
+    }
+    
+    .skills-img {
+        margin-right: 40px;
+        margin-left: 0;
+    }
+    
+    .skills-details p {
+        width: 400px;
     }
     
     .contact-container p {
